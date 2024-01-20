@@ -1,5 +1,5 @@
 # Silliness
- adds craftable candy that enables/disables silly sounds and celebration
+## adds craftable candy that enables/disables silly sounds and celebration
 
  >[!TIP]
 >The download .zip file contains a folder called `\Mods`. You can either:
