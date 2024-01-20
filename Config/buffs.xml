@@ -1,0 +1,52 @@
+<HellsJanitor>
+
+	<append xpath="/buffs">
+	<buff name="buffSillySoundsEnable" name_key="SillySoundsOn" description_key="SillySoundsOnDesc" icon="ui_game_symbol_twitch_sound_effects" icon_color="0,255,0" icon_blink="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value="1"/>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="twitch_good_buff_ended" play_in_head="true" />
+			<triggered_effect trigger="onSelfBuffStart" action="AltSounds" enabled="true"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSillySoundsDisable"/>
+		</effect_group>		
+	</buff>
+	
+	<buff name="buffSillySoundsDisable" name_key="SillySoundsOff" description_key="SillySoundsOffDesc" icon="ui_game_symbol_twitch_sound_effects" icon_color="128,0,0">
+		<stack_type value="ignore"/>
+		<duration value=".1"/>		
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="twitch_bad_buff_ended" play_in_head="true" />
+			<triggered_effect trigger="onSelfBuffStart" action="AltSounds" enabled="false"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSillySoundsEnable"/>
+		</effect_group>		
+	</buff>
+	
+	
+	<buff name="buffCelebrateEnable" name_key="CelebrateOn" description_key="CelebrateOnDesc" icon="ui_game_symbol_twitch_celebrate" icon_color="0,255,0" icon_blink="true">
+		<stack_type value="replace"/>
+		<duration value="0"/>
+		
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="twitch_good_buff_ended" play_in_head="true" />
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffCelebrateDisable"/>
+			<passive_effect name="CelebrationKill" operation="base_set" value="1">
+			<requirement name="!EntityTagCompare" target="other" tags="animal"/>
+			</passive_effect>
+		</effect_group>
+	</buff>
+	
+	<buff name="buffCelebrateDisable" name_key="CelebrateOff" description_key="CelebrateOffDesc" icon="ui_game_symbol_twitch_celebrate" icon_color="128,0,0">
+		<stack_type value="replace"/>
+		<duration value=".1"/>
+		
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="twitch_bad_buff_ended" play_in_head="true" />
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffCelebrateEnable"/>
+			<passive_effect name="CelebrationKill" operation="base_set" value="0" />
+		</effect_group>
+	</buff>
+	</append>
+</HellsJanitor>

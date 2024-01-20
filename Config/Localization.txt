@@ -1,0 +1,13 @@
+Key,english
+drugSillySoundsOn,Silly Sounds On!
+drugSillySoundsOff,Silly Sounds Off
+drugCelebrateOn,Celebration On!
+drugCelebrateOff,Celebration Off
+drugSillySoundsOnDesc,"Enable silly sounds! Weapons, tools and explosives all make silly sounds!\n\nDisabled by consuming 'Silly Sounds Off'"
+drugSillySoundsOffDesc,"Disables Silly Sounds :("
+drugCelebrateOnDesc,"Enables Celebration! Enemies explode in a cloud of confetti!\n\nDisabled by consuming 'Celebration Off'"
+drugCelebrateOffDesc,"Disables Celebration :("
+SillySoundsOn,Silly Sounds!
+SillySoundsOnDesc,"Weapons, tools and explosives all make silly sounds!\n\nDisable this effect by consuming 'Silly Sounds Off'"
+CelebrateOn,Celebration!
+CelebrateOnDesc,"Enemies explode in a cloud of confetti!\n\nDisable this effect by consuming 'Celebration Off'"

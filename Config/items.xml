@@ -1,0 +1,96 @@
+<HellsJanitor>
+	
+	<append xpath="/items">
+	<item name="drugSillySoundsOn">
+		<property name="CustomIcon" value="drugSillySounds"/>
+		<property name="DescriptionKey" value="drugSillySoundsOnDesc"/>
+		<property name="Tags" value="medical"/>
+		<property name="DisplayType" value="drugAtomJunkies"/>
+		<property name="HoldType" value="16"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="Morganic"/>
+		<property name="EconomicValue" value="0"/>
+		<property name="Stacknumber" value="10"/> <!-- STK loot -->
+		<property name="Group" value="Science,Medical"/>
+		<property class="Action0">
+			<property name="Class" value="Eat"/>
+			<property name="Delay" value="1.0"/>
+			<property name="Sound_start" value="player_painkillers"/>
+		</property>
+		<effect_group tiered="false" name="Candy Tier 1">			
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffSillySoundsEnable"/>
+		</effect_group>
+	</item>
+	
+	<item name="drugSillySoundsOff">
+		<property name="CustomIcon" value="drugSillySounds"/>
+		<property name="CustomIconTint" value="128,0,0"/>
+		<property name="DescriptionKey" value="drugSillySoundsOffDesc"/>
+		<property name="Tags" value="medical"/>
+		<property name="DisplayType" value="drugAtomJunkies"/>
+		<property name="HoldType" value="16"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="Morganic"/>
+		<property name="EconomicValue" value="0"/>
+		<property name="Stacknumber" value="10"/> <!-- STK loot -->
+		<property name="Group" value="Science,Medical"/>
+		<property class="Action0">
+			<property name="Class" value="Eat"/>
+			<property name="Delay" value="1.0"/>
+			<property name="Sound_start" value="player_painkillers"/>
+		</property>
+		<effect_group tiered="false" name="Candy Tier 1">			
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffSillySoundsDisable"/>
+		</effect_group>
+	</item>
+	
+	<item name="drugCelebrateOn">
+		<property name="CustomIcon" value="drugCelebrate"/>
+		<property name="DescriptionKey" value="drugCelebrateOnDesc"/>
+		<property name="Tags" value="medical"/>
+		<property name="DisplayType" value="drugAtomJunkies"/>
+		<property name="HoldType" value="16"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="Morganic"/>
+		<property name="EconomicValue" value="0"/>
+		<property name="Stacknumber" value="10"/> <!-- STK loot -->
+		<property name="Group" value="Science,Medical"/>
+		<property class="Action0">
+			<property name="Class" value="Eat"/>
+			<property name="Delay" value="1.0"/>
+			<property name="Sound_start" value="player_painkillers"/>
+		</property>
+		<effect_group tiered="false" name="Candy Tier 1">			
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffCelebrateEnable"/>
+		</effect_group>
+	</item>
+	
+	<item name="drugCelebrateOff">
+		<property name="CustomIcon" value="drugCelebrate"/>
+		<property name="CustomIconTint" value="128,0,0"/>
+		<property name="DescriptionKey" value="drugCelebrateOffDesc"/>
+		<property name="Tags" value="medical"/>
+		<property name="DisplayType" value="drugAtomJunkies"/>
+		<property name="HoldType" value="16"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="Morganic"/>
+		<property name="EconomicValue" value="0"/>
+		<property name="Stacknumber" value="10"/> <!-- STK loot -->
+		<property name="Group" value="Science,Medical"/>
+		<property class="Action0">
+			<property name="Class" value="Eat"/>
+			<property name="Delay" value="1.0"/>
+			<property name="Sound_start" value="player_painkillers"/>
+		</property>
+		<effect_group tiered="false" name="Candy Tier 1">			
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffCelebrateDisable"/>
+		</effect_group>
+	</item>
+	
+	</append>
+
+</HellsJanitor>

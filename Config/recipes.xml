@@ -1,0 +1,10 @@
+<HellsJanitor>
+	
+	<append xpath="/recipes">
+	<recipe name="drugSillySoundsOn" count="1" craft_time="1" craft_exp_gain="0"/>
+	<recipe name="drugSillySoundsOff" count="1" craft_time="1" craft_exp_gain="0"/>	
+	<recipe name="drugCelebrateOn" count="1" craft_time="1" craft_exp_gain="0"/>
+	<recipe name="drugCelebrateOff" count="1" craft_time="1" craft_exp_gain="0"/>
+	</append>
+
+</HellsJanitor>
